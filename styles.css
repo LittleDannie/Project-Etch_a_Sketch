@@ -31,3 +31,14 @@ body {
     margin: 0.5px;
     flex: 1;
 }
+
+input[type=button] {
+    background-color: lime;
+    color: white;
+    border: 1px solid lime;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 1000;
+    margin: 20px 0;
+    border-radius: 6px;
+}
