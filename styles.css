@@ -47,3 +47,7 @@ input[type=button]:hover {
     background-color: white;
     color: lime;
 }
+
+input[type=button]:focus {
+    outline: lime;
+}
