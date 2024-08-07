@@ -5,7 +5,7 @@ window.addEventListener('load', createGrid());
 
 
 newGridButton.addEventListener('click', () => {
-    const userInput = parseInt(prompt('Input value for new grid!', 16));
+    const userInput = parseInt(prompt('Input value for new grid!', 100));
 
     if (userInput > 0 && userInput <= 100) {
         createGrid(userInput);
@@ -16,7 +16,7 @@ newGridButton.addEventListener('click', () => {
     }
 });
 
-function createGrid(num = 18) {
+function createGrid(num = 12 ) {
     container.innerHTML = '';
 
     for (let i = 0; i < num; i++) {
