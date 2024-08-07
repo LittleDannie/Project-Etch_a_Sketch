@@ -42,3 +42,8 @@ input[type=button] {
     margin: 20px 0;
     border-radius: 6px;
 }
+
+input[type=button]:hover {
+    background-color: white;
+    color: lime;
+}
