@@ -14,3 +14,11 @@ for (let i = 0; i < 18; i++) {
 
     container.appendChild(squareRow);
 }
+
+const squares = document.querySelectorAll('.square');
+
+squares.forEach(square => {
+    square.addEventListener('mouseover', (event) => {
+        event.target.style['background-color'] = 'rgb(120, 120, 120)';
+    })
+});
