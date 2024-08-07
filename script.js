@@ -1,6 +1,8 @@
 const container = document.querySelector('#container');
 const newGridButton = document.querySelector('input[type=button]');
 
+window.addEventListener('load', createGrid());
+
 
 newGridButton.addEventListener('click', () => {
     const userInput = parseInt(prompt('Input value for new grid!', 16));
