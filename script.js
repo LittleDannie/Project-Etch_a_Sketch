@@ -9,14 +9,14 @@ newGridButton.addEventListener('click', () => {
 
     if (userInput > 0 && userInput <= 100) {
         createGrid(userInput);
-    } else if (userInput <= 0)  {
+    } else if (userInput <= 0) {
         alert('Value must be greater than 0');
     } else if (userInput > 100) {
         alert('Value must not be more than 100');
     }
 });
 
-function createGrid(num = 12 ) {
+function createGrid(num = 12) {
     container.innerHTML = '';
 
     for (let i = 0; i < num; i++) {
