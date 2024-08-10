@@ -37,11 +37,11 @@ function createGrid(num = 12) {
 
     squares.forEach(square => {
         square.addEventListener('mouseover', (event) => {
-            event.target.style['background-color'] = 'rgb(120, 120, 120)';
+            event.target.style['background-color'] = `hsl(${randomHue()}, 100%, 50%`;
         })
     });
 }
 
-function randomNumber() {
+function randomHue() {
     return (Math.floor(Math.random() * 360));
 }
