@@ -41,3 +41,7 @@ function createGrid(num = 12) {
         })
     });
 }
+
+function randomNumber() {
+    return (Math.floor(Math.random() * 360));
+}
