@@ -26,6 +26,7 @@ function createGrid(num = 12) {
         for (let i = 0; i < num; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
+            square.dataset.lightness = 55;
 
             squareRow.appendChild(square);
         }
@@ -37,7 +38,17 @@ function createGrid(num = 12) {
 
     squares.forEach(square => {
         square.addEventListener('mouseover', (event) => {
-            event.target.style['background-color'] = `hsl(${randomHue()}, 100%, 50%`;
+            const newLightness = () => {
+                const newValue = event.target.getAttribute('data-lightness') - 5;
+                if (newValue > 0) {
+                    square.dataset.lightness = newValue;
+                } else {
+                    square.dataset.lightness = 0;
+                }
+                return newValue;
+            };
+
+            event.target.style['background-color'] = `hsl(${randomHue()}, 100%, ${newLightness() + '%'}`;
         })
     });
 }
